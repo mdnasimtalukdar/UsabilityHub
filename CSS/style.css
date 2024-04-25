@@ -38,9 +38,26 @@ p{
     color: var(--primaryColor);
 }
 .slogan{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #183b56;
+}
+.mainBtn{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--primaryColor);
+    padding: 1rem 2rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 1rem;
+}
+.secondBtn{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primaryColor);
+    padding: 1rem 2rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 1rem;
 }
 .container{
     max-width: 110rem;
@@ -53,9 +70,9 @@ p{
 #banner{
     background-color:#4fb3d4;
     background-image: url(../Images/icon/banner.png);
-    background-size: 35rem;
+    background-size: 20rem;
     background-position: center;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
 }
 #banner .bannerContent{
     display: flex;
@@ -65,9 +82,42 @@ p{
 }
 #banner .bannerContent p {
     color: #fff;
+    font-size: ;
 }
 #banner .bannerContent i{
     font-size: 1.5rem;
     color: #fff;
 }
 /* Banner */
+/* Navbar */
+nav{
+    padding-top: 2.4rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo img{
+    max-width: 20rem;
+    cursor: pointer;
+}
+.navbar .menu ul{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.navbar .menu ul li a{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #183b56;
+    transition: all ease-in .5s;
+}
+.navbar .menu ul li a:hover{
+    color: var(--secondaryColor)
+}
+.hover2:hover{
+   background-color: transparent;
+    
+}
+/* Navbar */
