@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* === Font === */
+/* Common style */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --primaryColor: #7753be;
+    --secondaryColor:#f472b6;
+}
+html{
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #577592;
+}
+.mainHeading{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+.subHeading{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+.slogan{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #183b56;
+}
+.container{
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+/* Common style */
+
+/* Banner */
+#banner{
+    background-color:#4fb3d4;
+    background-image: url(../Images/icon/banner.png);
+    background-size: 35rem;
+    background-position: center;
+    padding: 3rem 0;
+}
+#banner .bannerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#banner .bannerContent p {
+    color: #fff;
+}
+#banner .bannerContent i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+/* Banner */
