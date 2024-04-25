@@ -13,8 +13,8 @@
     scroll-behavior: smooth;
 }
 :root{
-    --primaryColor: #7753be;
-    --secondaryColor:#f472b6;
+    --primaryColor: #183b54;
+    --secondaryColor:#40a9fd;
 }
 html{
     font-family: "Poppins", sans-serif;
@@ -43,24 +43,35 @@ p{
     color: #183b56;
 }
 .mainBtn{
-    font-weight: 700;
+    font-weight: 900 !important;
+    letter-spacing: .1rem;
     font-size: 1.6rem;
-    color: var(--primaryColor);
     padding: 1rem 2rem;
     border: 1px solid var(--primaryColor);
     border-radius: 1rem;
+    transition: all linear .5s;
+}
+.mainBtn:hover{
+    border-color: var(--secondaryColor);
 }
 .secondBtn{
-    font-weight: 700;
+    font-weight: 900 !important;
+    letter-spacing: .1rem;
     font-size: 1.6rem;
     color: #fff;
     background-color: var(--primaryColor);
     padding: 1rem 2rem;
     border: 1px solid var(--primaryColor);
     border-radius: 1rem;
+    color: #fff !important;
+    transition: all linear .5s;
+}
+.secondBtn:hover{
+    border-color: var(--secondaryColor);
+    background-color: var(--secondaryColor);
 }
 .container{
-    max-width: 110rem;
+    max-width: 118rem;
     margin: 0 auto;
     padding: 0 5rem;
 }
@@ -116,8 +127,39 @@ nav{
 .navbar .menu ul li a:hover{
     color: var(--secondaryColor)
 }
-.hover2:hover{
-   background-color: transparent;
-    
-}
+
 /* Navbar */
+/* Hero */
+#hero{
+    margin: 5rem 0;
+}
+.heroContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.heroText{
+    flex: 50%;
+}
+.heroText h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+.heroText p{
+    margin: 2rem 0;
+}
+.heroImg {
+    flex: 50%;
+}
+.heroImg img{
+    width: 100%;
+}
+/* Hero */
+
+
+
+/* Responsive CSS */
+
+/* Responsive CSS */
