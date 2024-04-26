@@ -90,10 +90,7 @@ p{
     padding: 1.5rem 0;
 }
 #banner .bannerContent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    text-align: center;
 }
 #banner .bannerContent p {
     color: #fff;
@@ -300,3 +297,67 @@ nav{
     font-size: 1.6rem;
     color: var(--primaryColor);
 }
+
+/* === Responsive CSS ===  */
+@media screen and (max-width:767px){
+    .navbar{
+        display: none;
+    }
+    .heroContent{
+        flex-direction: column;
+    }
+    .heroText{
+        text-align: center;
+    }
+    .userResearch .FeatureBoxes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .moreFeature{
+        flex-direction: column;
+    }
+    .moreFeatureText{
+        text-align: center;
+    }
+    .smOrder{
+        order: 1;
+    }
+    .blogPosts{
+        justify-content: center;
+        gap: 2rem;
+    }
+    .footerContent{
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+    }
+    .footerContent .logo{
+        display: none;
+    }
+    .footerProduct{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .logo{
+        margin-bottom: 2rem;
+    }
+    .blogPost{
+        flex-grow: 1;
+    }
+    .blogPosts{
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+@media (min-width: 1024px){
+    .blogPost{
+        flex-grow: 1;
+    }
+    .blogPosts{
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+/* === Responsive CSS ===  */
