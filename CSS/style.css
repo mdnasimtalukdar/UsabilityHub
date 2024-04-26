@@ -97,7 +97,6 @@ p{
 }
 #banner .bannerContent p {
     color: #fff;
-    font-size: ;
 }
 #banner .bannerContent i{
     font-size: 1.5rem;
@@ -213,3 +212,91 @@ nav{
 }
 
 /* More Feature */
+/* Blog */
+.blog{
+    margin-bottom: 8rem;
+}
+.blogHead button{
+    margin-top: 3rem;
+}
+.blogHead{
+    text-align: center;
+}
+.blogPosts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blogPost{
+    position: relative;
+    height: 30rem;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+.blogImg{
+    height: 100%;
+}
+.blogImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blogPostText{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #030508c4;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: end;
+    transition: all linear .5s;
+}
+.blogPostText p{
+    color: white;
+}
+.blogPost:hover .blogPostText{
+    left: 0;
+}
+/* Blog */
+/* Testing */
+.testing{
+    background-color: #87cdff;
+    text-align: center;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin-bottom: 8rem;
+}
+/* Testing */
+.footerContent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: end;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+.footerContent .logo{
+    max-width: 20rem;
+    justify-self: start;
+}
+.footerContent .logo img{
+    width: 100%;
+}
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.footerMenu li a{
+    font-size: 1.6rem;
+    color: var(--primaryColor);
+}
